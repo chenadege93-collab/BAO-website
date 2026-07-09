@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Contact | WAY IN STUDIOS – Get in Touch</title>
+    <meta name="description" content="Contact WAY IN STUDIOS for professional photography, videography, brand design, and event coverage. We innovate in every frame." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://yourwebsite.com/contact.html" />
+    
+    <meta property="og:title" content="Contact WAY IN STUDIOS – Photography, Videography & Design" />
+    <meta property="og:description" content="Contact WAY IN STUDIOS for professional photography, videography, brand design, and event coverage." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com/contact.html" />
+    <meta property="og:image" content="https://yourwebsite.com/images/og-image.jpg" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact WAY IN STUDIOS – Photography, Videography & Design" />
+    <meta name="twitter:description" content="Contact WAY IN STUDIOS for professional photography, videography, brand design, and event coverage." />
+    
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="contact.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- ======================================== -->
+    <!-- NAVIGATION (Updated Logo)                -->
+    <!-- ======================================== -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="WAY IN STUDIOS Home">
+                <img src="images/logo.jpeg" alt="WAY IN STUDIOS Logo" class="logo-image" />
+                <span class="logo-text">
+                    WAY IN <span class="highlight">STUDIOS</span>
+                </span>
+            </a>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About & Stories</a>
+                <a href="services.html">What We Do</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================================== -->
+    <!-- CONTACT HERO                             -->
+    <!-- ======================================== -->
+    <section class="contact-hero">
+        <div class="container">
+            <p class="section-tag">GET IN TOUCH</p>
+            <h1 class="contact-title">
+                Let's Bring Your <span class="highlight">Vision to Life</span>
+            </h1>
+            <p class="contact-subtitle">
+                Have a project in mind? We'd love to hear about it. Reach out and
+                let's start a conversation about your creative needs.
+                <span class="highlight">We innovate in every frame.</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- CONTACT FORM & INFO                      -->
+    <!-- ======================================== -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- ============================== -->
+                <!-- CONTACT FORM                   -->
+                <!-- ============================== -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a <span class="highlight">Message</span></h2>
+                    <p class="form-subtitle">
+                        Fill in the form below and we'll get back to you via WhatsApp.
+                    </p>
+
+                    <form id="contactForm" class="contact-form" action="#" method="POST" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required />
+                            <div class="error-message" id="nameError">Please enter your full name.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                            <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+237 6XX XXX XXX" required />
+                            <div class="error-message" id="phoneError">Please enter your phone number.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="photography">📸 Photography</option>
+                                <option value="videography">🎥 Videography</option>
+                                <option value="brand-design">🏷️ Brand Design</option>
+                                <option value="logo-design">✏️ Logo Design</option>
+                                <option value="social-media">📱 Social Media Content</option>
+                                <option value="event-coverage">🎉 Event Coverage</option>
+                                <option value="graphic-design">🎨 Graphic Design</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                            <div class="error-message" id="messageError">Please enter your message.</div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                            <a href="https://wa.me/message/EFZYZ3Z6QPGJN1" target="_blank" class="whatsaap" aria-label="send message on whatsaap">send message</a>
+                    </form>
+
+                    <div class="form-success" id="formSuccess">
+                        <span class="success-icon">✅</span>
+                        <h3>Message Ready!</h3>
+                        <p>Your message has been prepared. Click the button below to send it via WhatsApp.</p>
+                        <a href="#" id="whatsappRedirect" class="whatsapp-redirect-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Send on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ============================== -->
+                <!-- CONTACT INFO SIDEBAR           -->
+                <!-- ============================== -->
+                <div class="contact-info-wrapper">
+                    <div class="info-card">
+                        <h3>Contact <span class="highlight">Information</span></h3>
+                        
+                        <div class="info-item">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Buea, South West Region<br />Cameroon</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">📞</span>
+                            <div>
+                                <h4>Phone / WhatsApp</h4>
+                                <p><a href="https://wa.me/message/EFZYZ3Z6QPGJN1" target="_blank">+237 6XX XXX XXX</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">✉️</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@wayinstudios.com">info@wayinstudios.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <span class="info-icon">🕐</span>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon – Fri: 9:00 AM – 6:00 PM<br />Sat – Sun: By Appointment</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Handles -->
+                    <div class="social-card">
+                        <h3>Follow <span class="highlight">Us</span></h3>
+                        <p class="social-subtitle">Connect with us on social media for updates and inspiration.</p>
+                        
+                        <div class="social-links">
+                            <a href="https://youtube.com/@wayinstudios?si=hJQSYKKC332icSOX" class="social-link youtube" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                                <small>@WAYINSTUDIOS</small>
+                            </a>
+                            <a href="https://www.linkedin.com/in/way-in-studios-54771a302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link linkedin" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                                <small>@WAYINSTUDIOS</small>
+                            </a>
+                            <a href="https://www.instagram.com/wayinstudios?igsh=MTE4cmR5bnF1eDFpZQ== " class="social-link instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                                <small>@wayinstudios</small>
+                            </a>
+                            <a href="https://wa.me/message/EFZYZ3Z6QPGJN1" class="social-link whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                                <small>+237 6XX XXX XXX</small>
+                            </a>
+                            <a href="https://www.facebook.com/share/1Lz9awwJvV/" class="social-link facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                                <span>Facebook</span>
+                                <small>@WAYINSTUDIOS</small>
+                            </a>
+                            <a href="https://twitter.com/wayinstudios" class="social-link twitter" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter/X</span>
+                                <small>@wayinstudios</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- MAP SECTION - Cameroon, Buea             -->
+    <!-- ======================================== -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31734.405626745767!2d9.19087865!3d4.15211795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10613963f3b4ed33%3A0x5de30b52c6a7246b!2sBuea%2C%20Cameroon!5e0!3m2!1sen!2sus!4v1700000000000" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="WAY IN STUDIOS Location Map - Buea, Cameroon"
+                    aria-label="Map showing WAY IN STUDIOS's office location in Buea, Cameroon">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- FAQ SECTION                              -->
+    <!-- ======================================== -->
+    <section class="faq">
+        <div class="container">
+            <p class="section-tag">FAQ</p>
+            <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What services do you offer?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer Photography, Videography, Brand Design, Logo Design, Social Media Content Creation, Event Coverage, and Graphic Design.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How much does your services cost?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Pricing varies depending on the scope and complexity of your project. Contact us for a free, no-obligation consultation and quote.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How long does a project typically take?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on the type and scale of work. A photography session might take a few hours, while a full brand identity project could take 2-4 weeks.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you travel for events?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We work with clients locally and internationally. Travel logistics are included in our project planning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- CTA                                      -->
+    <!-- ======================================== -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Your <span class="highlight">Project?</span></h2>
+            <p>Let's create something extraordinary together. <strong>We innovate in every frame.</strong></p>
+            <a href="#contactForm" class="cta-button">Get in Touch Now</a>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- FOOTER                                   -->
+    <!-- ======================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>WAY IN <span class="highlight">STUDIOS</span></h3>
+                    <p>We innovate in every frame</p>
+                    <p class="footer-tagline">Crafting creative experiences that leave a lasting impression.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About & Stories</a>
+                    <a href="services.html">What We Do</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://youtube.com/@wayinstudios?si=hJQSYKKC332icSOX" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/way-in-studios-54771a302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/wayinstudios?igsh=MTE4cmR5bnF1eDFpZQ== " target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/message/EFZYZ3Z6QPGJN1" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WAY IN STUDIOS. All rights reserved. We innovate in every frame.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

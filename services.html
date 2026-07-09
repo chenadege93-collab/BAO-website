@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>What We Do | WAY IN STUDIO – Services & Portfolio</title>
+    <meta name="description" content="Explore our creative services and portfolio. Photography, videography, brand design, logo design, social media content, event coverage, and graphic design." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://yourwebsite.com/services.html" />
+    
+    <meta property="og:title" content="What We Do | WAY IN STUDIO – Services & Portfolio" />
+    <meta property="og:description" content="Explore our creative services and portfolio. We innovate in every frame." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com/services.html" />
+    <meta property="og:image" content="https://yourwebsite.com/images/og-image.jpg" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="What We Do | WAY IN STUDIO – Services & Portfolio" />
+    <meta name="twitter:description" content="Explore our creative services and portfolio. We innovate in every frame." />
+    
+    <link rel="stylesheet" href="services.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ======================================== -->
+    <!-- NAVIGATION                               -->
+    <!-- ======================================== -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="WAY IN STUDIOS Home">
+    <img src="images/logo.jpeg" alt="WAY IN STUDIOS Logo" class="logo-image" />
+    <span class="logo-text">
+        WAY IN <span class="highlight">STUDIOS</span>
+    </span>
+</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About & Stories</a>
+                <a href="services.html" class="active">What We Do</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======================================== -->
+    <!-- HERO                                    -->
+    <!-- ======================================== -->
+    <section class="page-hero">
+        <div class="container">
+            <p class="section-tag">WHAT WE DO</p>
+            <h1 class="page-title">
+                Our <span class="highlight">Services</span> &amp; <span class="highlight">Portfolio</span>
+            </h1>
+            <p class="page-subtitle">
+                From photography to branding, we deliver creative excellence across every service.
+                <span class="highlight">We innovate in every frame.</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- SERVICE FILTER TABS                      -->
+    <!-- ======================================== -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-tabs" id="filterTabs">
+                <button class="filter-tab active" data-filter="all">All Work</button>
+                <button class="filter-tab" data-filter="photography">📸 Photography</button>
+                <button class="filter-tab" data-filter="videography">🎥 Videography</button>
+                <button class="filter-tab" data-filter="brand">🏷️ Brand Design</button>
+                <button class="filter-tab" data-filter="logo">✏️ Logo Design</button>
+                <button class="filter-tab" data-filter="social">📱 Social Media</button>
+                <button class="filter-tab" data-filter="event">🎉 Event Coverage</button>
+                <button class="filter-tab" data-filter="graphic">🎨 Graphic Design</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- SERVICES GRID                            -->
+    <!-- ======================================== -->
+    <section class="services-grid-section">
+        <div class="container">
+            <div class="services-grid" id="servicesGrid">
+                
+                <!-- Photography -->
+                <div class="service-card" data-category="photography">
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fas fa-camera"></i></div>
+                        <h3>Photography</h3>
+                        <p>Wedding, event, portrait, fashion &amp; commercial photography.</p>
+                        <div class="service-tags">
+                            <span class="tag">Weddings</span>
+                            <span class="tag">Events</span>
+                            <span class="tag">Portraits</span>
+                        </div>
+                        <button class="service-btn" data-service="photography">View Work <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Videography -->
+                <div class="service-card" data-category="videography">
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fas fa-video"></i></div>
+                        <h3>Videography</h3>
+                        <p>Cinematic wedding films, commercials, corporate videos &amp; events.</p>
+                        <div class="service-tags">
+                            <span class="tag">Weddings</span>
+                            <span class="tag">Commercial</span>
+                            <span class="tag">Events</span>
+                        </div>
+                        <button class="service-btn" data-service="videography">View Work <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Brand Design -->
+                <div class="service-card" data-category="brand">
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                        <h3>Brand Design</h3>
+                        <p>Complete brand identity, strategy, guidelines &amp; collateral.</p>
+                        <div class="service-tags">
+                            <span class="tag">Identity</span>
+                            <span class="tag">Strategy</span>
+                            <span class="tag">Guidelines</span>
+                        </div>
+                        <button class="service-btn" data-service="brand">View Work <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Logo Design -->
+                <div class="service-card" data-category="logo">
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Logo Design</h3>
+                        <p>Custom logos, redesigns, brand marks &amp; icons that stand out.</p>
+                        <div class="service-tags">
+                            <span class="tag">Custom</span>
+                            <span class="tag">Redesign</span>
+                            <span class="tag">Icons</span>
+                        </div>
+                        <button class="service-btn" data-service="logo">View Work <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Social Media Content -->
+                <div class="service-card" data-category="social">
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fas fa-share-alt"></i></div>
+                        <h3>Social Media Content</h3>
+                        <p>Graphics, short-form videos, campaigns &amp; content strategy.</p>
+                        <div class="service-tags">
+                            <span class="tag">Graphics</span>
+                            <span class="tag">Video</span>
+                            <span class="tag">Strategy</span>
+                        </div>
+                        <button class="service-btn" data-service="social">View Work <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Event Coverage -->
+                <div class="service-card" data-category="event">
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fas fa-calendar-check"></i></div>
+                        <h3>Event Coverage</h3>
+                        <p>Full coverage for weddings, corporate events, concerts &amp; more.</p>
+                        <div class="service-tags">
+                            <span class="tag">Weddings</span>
+                            <span class="tag">Corporate</span>
+                            <span class="tag">Concerts</span>
+                        </div>
+                        <button class="service-btn" data-service="event">View Work <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="service-card" data-category="graphic">
+                    <div class="service-card-inner">
+                        <div class="service-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Graphic Design</h3>
+                        <p>Print &amp; digital graphics, flyers, posters, banners &amp; packaging.</p>
+                        <div class="service-tags">
+                            <span class="tag">Print</span>
+                            <span class="tag">Digital</span>
+                            <span class="tag">Packaging</span>
+                        </div>
+                        <button class="service-btn" data-service="graphic">View Work <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- PORTFOLIO SHOWCASE WITH MODAL BUTTONS   -->
+    <!-- ======================================== -->
+    <section class="portfolio-showcase" id="portfolioShowcase">
+        <div class="container">
+            <div class="portfolio-header">
+                <div>
+                    <p class="section-tag">PORTFOLIO GALLERY</p>
+                    <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                </div>
+                <span class="portfolio-count" id="portfolioCount">Showing 12 projects</span>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                
+                <!-- Photography 1 -->
+                <div class="portfolio-item" data-category="photography">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/flyer5.jpeg" alt="image" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Photography</span>
+                            <h3>Sarah &amp; photo shoot</h3>
+                            <p>Beautiful and amazing moments captured</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="images/flyer5.jpeg" 
+                                    data-title="Sarah &amp; photo shoot" 
+                                    data-category="Photography" 
+                                    data-description="Beautiful and amazing moments captured during this stunning photo shoot.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photography 2 -->
+                <div class="portfolio-item" data-category="photography">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/birthdaypic.jpeg" alt="Birthday photo shoot" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Photography</span>
+                            <h3>Birthday Photo Shoot</h3>
+                            <p>Beautiful celebration moments</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="images/cup.jpeg" 
+                                    data-title="Birthday Photo Shoot" 
+                                    data-category="Photography" 
+                                    data-description="Beautiful birthday celebration moments captured with creativity and joy.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photography 3 -->
+                <div class="portfolio-item" data-category="photography">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/birthdaypic.jpeg" alt="images" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Photography</span>
+                            <h3>Intimate Wedding Ceremony</h3>
+                            <p>Romantic and candid moments</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="images/birthdaypic.jpeg" 
+                                    data-title="Intimate Wedding Ceremony" 
+                                    data-category="Photography" 
+                                    data-description="Romantic and candid moments captured during this intimate wedding ceremony.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Videography 1 -->
+                <div class="portfolio-item" data-category="videography">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/flyercamera.jpeg" alt="Product Commercial" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Videography</span>
+                            <h3>Product Commercial</h3>
+                            <p>Cinematic product storytelling</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="images/logo.jpeg" 
+                                    data-title="Product Commercial" 
+                                    data-category="Videography" 
+                                    data-description="Cinematic product commercial that tells a compelling story and connects with the audience emotionally.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Videography 2 -->
+                <div class="portfolio-item" data-category="videography">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/tools.jpeg" alt="Corporate Event" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Videography</span>
+                            <h3>Corporate Event Coverage</h3>
+                            <p>Professional event videography</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="images/flyer3.jpeg" 
+                                    data-title="Corporate Event Coverage" 
+                                    data-category="Videography" 
+                                    data-description="Professional corporate event coverage capturing key moments, speeches, and the overall atmosphere.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brand Design 1 -->
+                <div class="portfolio-item" data-category="brand">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/flyer1.jpeg" alt="Luxury Brand Identity" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Brand Design</span>
+                            <h3>Luxury Brand Identity</h3>
+                            <p>Complete brand transformation</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="images/flyer1.jpeg" 
+                                    data-title="Luxury Brand Identity" 
+                                    data-category="Brand Design" 
+                                    data-description="Complete luxury brand identity transformation including logo, color palette, and brand guidelines.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Brand Design 2 -->
+                <div class="portfolio-item" data-category="brand">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/cup.jpeg" alt="Startup Branding" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Brand Design</span>
+                            <h3>Startup Brand Identity</h3>
+                            <p>Modern brand strategy</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="images/logo2.jpeg" 
+                                    data-title="Startup Brand Identity" 
+                                    data-category="Brand Design" 
+                                    data-description="Modern brand identity for a tech startup including brand strategy and visual identity.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo Design 1 -->
+                <div class="portfolio-item" data-category="logo">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/logo.jpeg" alt="Modern Logo Design" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Logo Design</span>
+                            <h3>Modern Logo Design</h3>
+                            <p>Memorable brand marks</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&h=800&fit=crop" 
+                                    data-title="Modern Logo Design" 
+                                    data-category="Logo Design" 
+                                    data-description="A modern, minimalist logo design that captures the essence of the brand and stands out in the market.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo Design 2 -->
+                <div class="portfolio-item" data-category="logo">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/logo2.jpeg" alt="Minimalist Logo" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Logo Design</span>
+                            <h3>Minimalist Logo</h3>
+                            <p>Clean and timeless design</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="images/logo2.jpeg" 
+                                    data-title="Minimalist Logo" 
+                                    data-category="Logo Design" 
+                                    data-description="A clean, timeless logo design that communicates sophistication and simplicity.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media 1 -->
+                <div class="portfolio-item" data-category="social">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/flyercamera.jpeg" alt="Social Media Campaign" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Social Media</span>
+                            <h3>Social Media Campaign</h3>
+                            <p>Engaging content strategy</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="images/birthdaypic.jpeg" 
+                                    data-title="Social Media Campaign" 
+                                    data-category="Social Media" 
+                                    data-description="Creative social media campaign designed to engage audiences and build brand awareness.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Coverage 1 -->
+                <div class="portfolio-item" data-category="event">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/flyer2.jpeg" alt="Music Festival" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Event Coverage</span>
+                            <h3>Music Festival</h3>
+                            <p>Full event documentation</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="images/logo3.jpeg" 
+                                    data-title="Music Festival" 
+                                    data-category="Event Coverage" 
+                                    data-description="Full event coverage of a vibrant music festival capturing performances, crowd moments, and the festival atmosphere.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic Design 1 -->
+                <div class="portfolio-item" data-category="graphic">
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/flyer1.jpeg" alt="Graphic Design" class="portfolio-image" />
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">Graphic Design</span>
+                            <h3>Brand Collateral</h3>
+                            <p>Creative graphic solutions</p>
+                            <button class="portfolio-link-btn" 
+                                    data-image="images/flyer1.jpeg" 
+                                    data-title="Brand Collateral" 
+                                    data-category="Graphic Design" 
+                                    data-description="Creative graphic design solutions including business cards, brochures, and brand collateral materials.">
+                                View Project <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty State -->
+            <div class="portfolio-empty" id="portfolioEmpty">
+                <i class="fas fa-search"></i>
+                <h3>No projects found</h3>
+                <p>Try selecting a different category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- IMAGE MODAL - Full Size Viewer          -->
+    <!-- ======================================== -->
+    <div class="image-modal" id="imageModal">
+        <div class="image-modal-content">
+            <button class="image-modal-close" id="imageModalClose">&times;</button>
+            <div class="image-modal-body">
+                <img src="" alt="Project Image" id="modalImage" />
+                <div class="image-modal-info">
+                    <h3 id="modalTitle">Project Title</h3>
+                    <p class="modal-category" id="modalCategory">Category</p>
+                    <p class="modal-description" id="modalDescription">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================== -->
+    <!-- PROCESS                                 -->
+    <!-- ======================================== -->
+    <section class="process-section">
+        <div class="container">
+            <p class="section-tag">HOW WE WORK</p>
+            <h2 class="section-title">Our Creative <span class="highlight">Process</span></h2>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <span class="step-number">01</span>
+                    <div>
+                        <h3>Discovery</h3>
+                        <p>We listen and learn about your goals and vision.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">02</span>
+                    <div>
+                        <h3>Design</h3>
+                        <p>We create concepts, mood boards, and a plan.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">03</span>
+                    <div>
+                        <h3>Execute</h3>
+                        <p>We bring your vision to life with precision.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <span class="step-number">04</span>
+                    <div>
+                        <h3>Deliver</h3>
+                        <p>We deliver results that exceed expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- CTA                                     -->
+    <!-- ======================================== -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Create <span class="highlight">Something Amazing?</span></h2>
+            <p>Let's bring your vision to life. <strong>We innovate in every frame.</strong></p>
+            <a href="contact.html" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- ======================================== -->
+    <!-- FOOTER                                   -->
+    <!-- ======================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>WAY IN <span class="highlight">STUDIO</span></h3>
+                    <p>We innovate in every frame</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About & Stories</a>
+                    <a href="services.html">What We Do</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social-icons">
+                        <a href="https://youtube.com/@wayinstudios?si=hJQSYKKC332icSOX" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/way-in-studios-54771a302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/wayinstudios?igsh=MTE4cmR5bnF1eDFpZQ== " target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/message/EFZYZ3Z6QPGJN1" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WAY IN STUDIO. All rights reserved. We innovate in every frame.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="services.js"></script>
+</body>
+</html>
